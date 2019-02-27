@@ -6,7 +6,7 @@ before_install:
   - docker build -t jwozniak/docker-react -f Dockerfile.dev .
 
 script:
-docker run jwozniak/docker-react npm run test -- --coverage
+  - docker run jwozniak/docker-react npm run test -- --coverage
 
 
 
